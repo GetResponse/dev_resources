@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    THP
+\*------------------------------------*/
+[data-editable="container.thp"] {
+    background-color:#fff;
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+    min-height: 150px;
+}
+
+[data-editable="static-image"] img {
+    opacity: 1;
+}
+
+/*------------------------------------*\
+    BUTTON
+\*------------------------------------*/
+
+.button {    
+    height:40px;
+    box-shadow:0 2px 0 0 #348327;
+    border-radius:21px;
+    background-color:#46b234;
+}
+
+.button span {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif; 
+    font-size: 20px;
+    font-weight:bold;
+    color:#fff;
+}
+
+/* :hover and .hover add two times -> editor required */
+.button:hover {
+    background-color: #52ce3d;
+}
+
+.button.hover {
+    background-color: #52ce3d;
+}

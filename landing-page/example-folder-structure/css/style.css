@@ -1,0 +1,57 @@
+/*----------------------------- 
+    TEMPLATES GLOBAL
+-----------------------------*/
+
+section {
+    background-color:rgba(244, 240, 239, 1);
+}
+
+[data-section="wrap"] {
+    width:800px;
+}
+
+a {
+    color:rgba(48, 209, 255, 1);
+    text-decoration: underline;
+}
+
+a:hover {
+    color:#2499d0;
+}
+
+div[data-editable="text"] ul,
+div[data-editable="text"] ol {
+    padding-left: 24px;
+}
+
+div[data-editable="text"] ol li {
+    margin: 12px 0;
+}
+
+div[data-editable="text"] ul li {
+    margin: 6px 0;
+}
+
+div[data-editable='button'],
+div[data-editable="webform"] button {
+    border-radius: 40px;
+    background-color: rgba(176, 30, 67, 1);
+    background-image: linear-gradient(to bottom, #cc355e 0%, #9e1837 100%);
+    box-shadow: rgba(0, 0, 0, 0.811765) 0px 1px 1px 0px;
+}
+
+div[data-editable="button"] button,
+div[data-editable="webform"] button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, .6) 0px 0px 2px;
+}
+
+div[data-editable="button"] button:hover,
+div[data-editable="button"] button.btn-hover {
+    color: #fff;
+    text-decoration: none;
+}

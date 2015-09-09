@@ -1,0 +1,266 @@
+/*------------------------------------*\
+    FORM
+\*------------------------------------*/
+form {
+    background-image:url('img/bg.jpg');
+    background-position:30px 70px;
+    background-repeat:repeat;
+    background-color:#f9f9f9;
+    background-size:cover; /* fit screen */
+    width:220px;
+    height:300px;
+    padding:96px 30px 20px; /* for align 'custom' field */
+}
+
+/*------------------------------------*\
+    FONT
+\*------------------------------------*/
+
+.label label,
+.field .block,
+.field .list,
+.choose .list,
+.button span,
+.info p {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*------------------------------------*\
+    CONTAINER OFFSET
+\*------------------------------------*/
+
+/* [ label|input group offset ] */
+[data-editable="custom"] {
+    padding:7px 7px; /* always both values, never set to 0 */
+}
+
+/*------------------------------------*\
+    LABEL
+\*------------------------------------*/
+
+.label {
+    text-align:left /* center|right; default:left */
+}
+
+.label label {
+    font-size:10px;
+    font-weight:normal;
+    color:#82848b;
+    line-height:2;
+}
+
+/* [ Label label-position-left|right ratio ] */
+.label-position-left .label,
+.label-position-right .label {
+    width: 40%;
+}
+
+.label-position-left .box,
+.label-position-right .box {
+    width: 60%;
+}
+
+/*------------------------------------*\
+    BORDER - input, select list, select placeholder
+\*------------------------------------*/
+
+/* Only border|border-radius */
+.field .border {
+    border:1px solid #cccccc;
+}
+
+/*------------------------------------*\
+    INPUT/PLACEHOLDER
+\*------------------------------------*/
+
+/* [ Input|select placeholder ] */
+.field .block {
+    font-size:13px;
+    font-weight:normal;
+    color:#464a55;
+    text-align:left /* center|right; default:left */
+    background-color:#fff;
+    box-shadow: 0 2px 0 0 #a21e00; /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+/* [ Input|select|textarea|label padding ] */
+.field .padding {
+    padding-left:9px;
+    padding-right:9px;
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+.label-position-left .label,
+.label-position-right .label {
+    padding-top:7px; /* Only padding-top */
+}
+
+/* [ Nativ placeholder ] */
+.field .placeholder.like-placeholder {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size:13px;
+    font-weight:normal;
+    color:#555;
+    text-align:left /* center|right; default:left */
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size:13px;
+    font-weight:normal;
+    color:#555;
+    text-align:left /* center|right; default:left */
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size:13px;
+    font-weight:normal;
+    color:#555;
+    text-align:left /* center|right; default:left */
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size:13px;
+    font-weight:normal;
+    color:#555;
+    text-align:left /* center|right; default:left */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    font-family:Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size:13px;
+    font-weight:normal;
+    color:#555;
+    text-align:left /* center|right; default:left */
+}
+
+/*------------------------------------*\
+    DROPDOWN SELECT LIST
+\*------------------------------------*/
+
+/* [ List block - that same padding like .field .block ] */
+.list-item label {
+    padding-left:8px;
+    padding-right:8px;
+}
+
+/* [ Drop List::select|phone ] */
+.field .list {
+    font-size:16px;
+    font-weight:normal;
+    line-height:1.4;
+    color:#262626;
+    text-align:left /* center|right; default:left */
+    background-color:#ffffff;
+}
+
+/* [ Drop list text background::select|phone ] */
+.field .list .list-item .item-label {}
+
+/* [ Hover text background|color - :hover and .hover add two times -> editor required] */
+.field .list .list-item:hover .item-label {
+    color:#00afec;
+}
+
+.field .list .list-item .item-label.hover {
+    color:#00afec;
+}
+
+/* [ Selected text background|color ] */
+.field .list-item .item-label.selected,
+.field .list-item input:checked + .item-label {
+    color:#00afec;
+}
+
+/*------------------------------------*\
+    RADIO/CHECKBOX
+\*------------------------------------*/
+
+/* [ Radio|Checkbox text style ] */
+.choose .list {
+    font-size:16px;
+    font-weight:normal;
+    color:#fff;
+    line-height:1.4;
+}
+
+/* [ Item background - background on text in <li> ] */
+.choose .list .list-item .item-label {}
+
+/* :hover and .hover add two times -> editor required */
+.choose .list .list-item:hover .item-label {
+    color:#00afec;
+}
+
+.choose .list .list-item .item-label.hover {
+    color:#00afec;
+}
+
+/* [ Selected ] */
+.choose .list-item .item-label.selected,
+.choose .list-item input:checked + .item-label {
+    color:#00afec;
+}
+
+/*------------------------------------*\
+    BUTTON
+\*------------------------------------*/
+
+.button {
+    text-align:left /* center|right; default:left */
+    height:37px;
+    border-radius:4px;
+    background-color:#81d040;
+    box-shadow: 0 2px 0 0 #a21e00; /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.button span {
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+}
+
+/* :hover and .hover add two times -> editor required */
+.button:hover {
+    background-color: #8cdc4a;
+}
+
+.button.hover {
+    background-color: #8cdc4a;
+}
+
+/*------------------------------------*\
+    FIELD ICO
+\*------------------------------------*/
+
+.field-icon .field-icon-sign::after {
+    padding-right:9px; /* that same padding like .field .padding */
+}
+
+.field-icon.select.open .field-icon-sign::after {
+    padding-left:9px; /* that same padding like .field .padding */
+    padding-right:0; /* clear right because transform rotate */
+}
+
+/*------------------------------------*\
+    INFORMATION TEXT
+\*------------------------------------*/
+
+.info {
+    text-align:left /* center|right; default:left */
+}
+
+.info p {
+    font-size:11px;
+    font-weight:normal;
+    font-style:italic;
+    color:#fff;
+    line-height:2;
+}
