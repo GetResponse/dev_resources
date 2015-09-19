@@ -1,10 +1,9 @@
-### GetResponse WebForm template
+### GetResponse Forms template
 
-Every form template have 5 types which describe amount of columns in the form.
-Every form template should be create in all those variants.
+Every form template has 5 types that describe the number of columns in the form. Every form template should be created in all of the variants.
 Example structure of a template is in forms/example-form-structure
  
-Sizes for each of the variants is shown below:
+Sizes for each of the variants are shown below:
 
 1-column
 
@@ -51,7 +50,7 @@ form {
 }
 ```
 
-Thank You Page should have the same size as the column in which is put.
+Thank you page should have the same size as the column it was placed in.
 
 
 The main form html file should be called index.html
