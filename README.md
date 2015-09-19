@@ -9,6 +9,6 @@ integration with 3rd parties through our API
 
 1. [Fonts](available-font-family-list.md)
 1. [Custom newsletter template](newsletter-guide.md)
-2. [Landing Page layout](landing-page-guide.md)
+2. [Landing page guide](landing-page-guide.md)
 3. [Forms](forms-guide.md)
 4. [Api Integration](developer-integration.md)

@@ -3,23 +3,23 @@
 #### Basic rules
 
 1. HTML5
-1. All elements of the template must be positioning absolute with top and left in pixels.
+1. All elements of the template must be in absolute position with top and left in pixels
 1. CSS file must define colors for: a, a:hover
 1. It is forbidden to use: padding, margin, letter-spacing, white-space
-1. data-editable must specify: top left width height [background : color, image, position, repeat ...] [border] [border-radius] box-shadow opacity
-1. line-height must be set in %
-1. Any element that can be edit, must have set height and width
-1. Template must have main css file called: style.css. In this file must be specify those style that cannot be set inline.
+1. Data-editable must specify: top left width height [background : color, image, position, repeat ...] [border] [border-radius] box-shadow opacity
+1. Line-height must be set in %
+1. Any element that can be edited, must have a set height and width
+1. The template must have a main css file called: style.css. This file must specify that the style cannot be set inline.
 1. Styles should be set inline when possible
 1. Styles for links should not be grouped
-1. Style background-image should noty be set for whole body
+1. Style for the background image should not be set for the whole body
 1. Every section must be set to 100% and have set height
 1. Font weight should be set in numbers only
-1. In case of use bacground-image: linear-gradient() it should be left solid color background-color for old browser compatibility
+1. In case of the use of a background image: linear-gradient() it should be left in a solid background color for older browser compatibility
 
 #### Folder structure and main template
 
-Folder structure is located in landign-page/example-folder-structure
+Folder structure is located in landing-page/example-folder-structure
 
 Base html template for landing page:
 
@@ -67,9 +67,9 @@ Basic module for setting texts. Allows formatting, linking and embedding custom 
 
 ##### Box
     
-* Allow creating groups of modules (similar to photoshop). 
+* Allow for creating groups of modules (similar to photoshop). 
 * Can take individual property (background or border) independent from elements that are embeded inside it. 
-* Allow correct rendering for 1 colum landing page on mobile. 
+* Allow correct rendering for 1 column landing page on mobile. 
 
 Example below presents box with two independent text module inside:
 
@@ -111,7 +111,7 @@ Allow to embed images. Images can be loaded from template or from outside source
 
 ##### Webform
 
-Allow to subscribe to one of user campaign
+Allow to subscribe to one of user's campaign
     
 * 'action' param must be empty. Target campaign is set outside of the template in landing-page preference panel.
 * Labels position can be add by one of class show below to the "wf-item-pos" class:
@@ -163,7 +163,7 @@ Because of this mechanism:
 
 ##### Social
     
-Allow to ambed social media links.
+Allow to embed social media links.
     
 * Facebook
 * Twitter
